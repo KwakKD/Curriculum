@@ -1,0 +1,46 @@
+.body {
+    /* background-color: #FAF3E0; */
+    background-color: rgba(0,0,0,0.3);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginPage {
+    background-color: white;
+    width: 30vw;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 6px 5px rgba(0,0,0,0.4);
+    font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
+    text-align: center;
+}
+
+.loginPage h2 {
+    justify-content: center;
+    font-size: 30px;
+}
+
+.loginPage h1 {
+    justify-content: center;
+    font-size: 40px;
+    color: #6c6c6c;
+    margin-bottom: 50px;
+}
+
+.loginPage p {
+    margin-top: 1rem;
+    font-size: 0.875rem;
+}
+
+.link_text {
+    color: #3b82f6;
+    text-decoration: none;
+}
+
+.link_text:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,74 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
+  color: #111827;
+}
+
+/* 제목 */
+.container h5 {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 4px 0;
+  color: #374151;
+}
+
+.container h6 {
+  font-size: 13px;
+  font-weight: 400;
+  color: #6b7280;
+  margin: -2px 0 6px;
+}
+
+/* 국영수 시수 비율 섹션 */
+.percentBox {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.percentRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* 테이블 */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 4px;
+  font-size: 13px;
+}
+
+.table thead {
+  background-color: #f9fafb;
+}
+
+.table th,
+.table td {
+  border: 1px solid #e5e7eb;
+  padding: 6px;
+  text-align: center;
+}
+
+.table th {
+  font-weight: 600;
+  color: #374151;
+}
+
+.table tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.table tr:hover {
+  background-color: #f3f4f6;
+}
+
+.lowCredit {
+  color: rgb(255, 0, 0);
+  font-weight: 600;
+}

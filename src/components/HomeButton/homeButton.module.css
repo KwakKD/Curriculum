@@ -1,0 +1,25 @@
+.button {
+  padding: 8px 16px;
+  border: none;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
+  color: #ffffff;
+  background-color: #4f5781;
+  margin-right: 2%;
+  
+}
+
+.button:disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+.button:hover {
+    color: #a9feff
+}
+
+.button:focus {
+    outline: none;
+}
