@@ -360,7 +360,7 @@ const Table1Cell = React.memo(() => {
 
             if (!isFirst) return null;
 
-            const td = (idx: number, content?: string) => (
+            const td = (_idx: number, content?: string) => (
                 <td rowSpan={spanNumber} style={{ whiteSpace: "pre" }}>
                     {content ?? ""}
                 </td>

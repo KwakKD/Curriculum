@@ -35,15 +35,15 @@ export default function InPopup({ onClose }: { onClose: () => void }) {
     const [popMaxCreditState, setPopMaxCreditState] = useState(true);
     const [popSubjectName, setPopSubjectName] = useState('');
 
-    const { user, addSubject } = useSchoolJsonDataStore()
+    const { user, year, addSubject } = useSchoolJsonDataStore()
 
     const add = () => {
-        const tagNumber: number = user.AddSubject.length + SUBJECT.length + 1;
+        const tagNumber: number = user[year].AddSubject.length + SUBJECT.length + 1;
         if (popSubjectName === '') {
             toast.error('과목명을 입력하세요.');
             return
         } else {
-            const duplicateSubject = [...SUBJECT.map(item => item.과목명), ...user.AddSubject.map(item => item.과목명)]
+            const duplicateSubject = [...SUBJECT.map(item => item.과목명), ...user[year].AddSubject.map(item => item.과목명)]
             if (duplicateSubject.includes(popSubjectName)) {
                 toast.error(`"${popSubjectName}" 과목은 이미 존재하는 과목입니다.`);
                 return
@@ -91,7 +91,7 @@ export default function InPopup({ onClose }: { onClose: () => void }) {
             '최대학점': Number(popMaxCredit)
         }
 
-        addSubject(newItem);
+        addSubject(year, newItem);
         resetState();
         onClose();
         toast.success(`"${popSubjectName}"과목이 등록되었습니다.`)
