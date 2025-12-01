@@ -75,7 +75,7 @@
 //     )
 // }
 
-import styles from "./StatisticsInPanel.module.css";
+import styles from "./statisticsInPanel.module.css";
 import { useStatistics } from "../../hooks/useStatistics";
 
 export function StatisticsInPanel() {
